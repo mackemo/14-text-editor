@@ -13,7 +13,7 @@ const initdb = async () =>
   });
 
 
-export const putDb = async (id, content) => {
+export const putDb = async (content) => {
   console.log('PUT to the database');
   // open db and the version
   const db = await openDB('jate', 1);
@@ -22,7 +22,7 @@ export const putDb = async (id, content) => {
   // assign store called jate
   const store = tx.objectStore('jate');
   // update content on id
-  const request = store.put({ id, content }); 
+  const request = store.put({ id: 1, content: content }); 
   const result = await request;
   console.log('Data saved to database', result); 
 };
