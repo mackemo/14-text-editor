@@ -13,7 +13,8 @@ const initdb = async () =>
   });
 
 
-export const putDb = async (id, content) => {
+export const putDb = async (content) => {
+  const id = uuidv4(); // generate a unique key
   console.log('PUT to the database');
   // open db and the version
   const db = await openDB('jate', 1);
