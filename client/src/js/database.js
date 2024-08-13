@@ -22,7 +22,7 @@ export const putDb = async (content) => {
   // assign store called jate
   const store = tx.objectStore('jate');
   // update content on id
-  const request = store.put({ id: 1, content: content }); 
+  const request = store.put({ id: 1, value: content }); 
   const result = await request;
   console.log('Data saved to database', result); 
 };
@@ -36,11 +36,11 @@ export const getDb = async () => {
   const tx = db.transaction('jate', 'readonly');
   // assign store called jate
   const store = tx.objectStore('jate');
-  // retrieve all data
-  const request = store.getAll();
+  // retrieve data
+  const request = store.get(1);
   const result = await request;
-  console.log('result.value', result);
-  return result;
+  console.log('result.value', result.value);
+  return result.value;
 };
 
 initdb();
