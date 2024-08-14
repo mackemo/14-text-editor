@@ -19,17 +19,15 @@ The fourteenth challenge assignment from a bootcamp where the task was to build 
 -[Acknowledgement](#Acknowledgement)
 -[Questions](#Questions)
 
-<img src=""/>
-<img src=""/>
-<img src=""/>
-<img src=""/>
+<img src="./assets/ss1.png"/>
+<img src="./assets/ss2.png"/>
 
 ## Process
 The process included modifying the starter code given to me. Methods for getting and storing data was implemented in database.js to an IndexedDB database. The webpack file was completed from scratch to implement plugins for compiling the data. In the service worker file, there is code the pre-caching and logic is included for asset caching for JS, CSS, and images. When you click on the install button for the application in the brwoser, the app is installed as a icon on your desktop. 
 
 
 ## Links
-Link to site: 
+Link to site: https://one4-text-editor.onrender.com/
 
 
 ## Installation
@@ -37,7 +35,7 @@ To install this application, copy the ssh key from my github repo and clone it i
 
 
 ## Usage
-This site was a practice assignment for bootcamp students but can be used to see how an application made as a PWA works. 
+Upon visiting the site, a console window will open in the browser. As you type your text or code, if you click anywhere outside of the text editor field, the app will automatically save the text to the indexedDB in the web browser.
 
 
 ## Licenses
